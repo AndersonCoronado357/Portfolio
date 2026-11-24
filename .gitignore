@@ -1,0 +1,18 @@
+# dependencias
+node_modules/
+servidor/node_modules/
+
+# build
+dist/
+
+# credenciales y entorno — NUNCA subir
+.env
+.env.local
+servidor/.env
+
+# configuracion local del editor
+.claude/
+
+# logs y varios
+*.log
+.DS_Store

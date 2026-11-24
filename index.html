@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- La foto de Inicio se pide de entrada, junto con el codigo: si espera a
+       que React la ponga en la pagina, sale detras de las ~60 capturas y
+       logos de los proyectos. -->
+  <link rel="preload" as="image" href="/foto-inicio.webp" fetchpriority="high" />
+  <title>Anderson Coronado — Desarrollador de Software</title>
+  <!-- Buscadores y vista previa al compartir el enlace. Solo textos que ya
+       estan en el sitio (src/data/portafolio.js). La imagen es una captura
+       real del Inicio (scripts/og.mjs). -->
+  <meta name="description" content="Desarrollador full stack. Construyo aplicaciones completas: la interfaz que ves, la lógica que la mueve y la base de datos que la sostiene." />
+  <meta name="author" content="Anderson Coronado" />
+  <!-- Verificacion de propiedad en Google Search Console: no quitar. -->
+  <meta name="google-site-verification" content="kQccDg7SPoW-KuDF8XOWxtDYuiBCJzRwH06gh-D-16E" />
+  <link rel="canonical" href="https://ander.acmsy.com/" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Anderson Coronado" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:url" content="https://ander.acmsy.com/" />
+  <meta property="og:title" content="Anderson Coronado — Desarrollador de Software" />
+  <meta property="og:description" content="Desarrollador full stack. Construyo aplicaciones completas: la interfaz que ves, la lógica que la mueve y la base de datos que la sostiene." />
+  <meta property="og:image" content="https://ander.acmsy.com/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Anderson Coronado, desarrollador de software" />
+  <meta property="profile:first_name" content="Anderson" />
+  <meta property="profile:last_name" content="Coronado" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Anderson Coronado — Desarrollador de Software" />
+  <meta name="twitter:description" content="Desarrollador full stack. Construyo aplicaciones completas: la interfaz que ves, la lógica que la mueve y la base de datos que la sostiene." />
+  <meta name="twitter:image" content="https://ander.acmsy.com/og.jpg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://ander.acmsy.com/#persona",
+          "name": "Anderson Coronado",
+          "url": "https://ander.acmsy.com/",
+          "image": "https://ander.acmsy.com/foto-inicio.png",
+          "jobTitle": "Desarrollador Full Stack",
+          "description": "Desarrollador full stack. Construyo aplicaciones completas: la interfaz que ves, la lógica que la mueve y la base de datos que la sostiene.",
+          "email": "mailto:andersoncoronado157@gmail.com",
+          "sameAs": ["https://github.com/AndersonCoronado357"],
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "Institución Universitaria ITM" },
+          "knowsAbout": ["Desarrollo full stack", "Frontend", "Backend", "Bases de datos", "React", "Angular", "TypeScript", "JavaScript", "Node.js", "PHP", "Laravel", "Python", "SQL", "MySQL", "PostgreSQL", "MongoDB", "Docker"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ander.acmsy.com/#sitio",
+          "name": "Anderson Coronado",
+          "url": "https://ander.acmsy.com/",
+          "inLanguage": "es",
+          "author": { "@id": "https://ander.acmsy.com/#persona" }
+        }
+      ]
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Nunito (terminaciones claramente redondeadas, redondeada pero seria) para títulos y cuerpo -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var g = localStorage.getItem('tema')
+        var m = g === 'light' || g === 'dark' ? g : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+        document.documentElement.setAttribute('data-theme', m)
+      } catch (e) {}
+    })()
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- Solo para quien entra sin JavaScript (algunos buscadores y lectores):
+       con JavaScript no se muestra nunca. -->
+  <noscript>
+    <h1>Anderson Coronado</h1>
+    <p>Desarrollador de Software</p>
+    <p>Desarrollador full stack. Construyo aplicaciones completas: la interfaz que ves, la lógica que la mueve y la base de datos que la sostiene.</p>
+    <p><a href="https://github.com/AndersonCoronado357">github.com/AndersonCoronado357</a> · <a href="mailto:andersoncoronado157@gmail.com">andersoncoronado157@gmail.com</a></p>
+  </noscript>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
